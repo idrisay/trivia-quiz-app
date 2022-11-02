@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trivia Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <h1>Trivia Quiz</h1>
+    </div>
+    <div id="quiz-wrapper">
+      <div id="selection">
+        <div id="noq-wrapper">
+          <label for="number-of-question">Number of question</label><br />
+          <input type="text" value="10" id="number-of-question" />
+        </div>
+        <div id="category-wrapper">
+          <label for="category">Category</label><br />
+          <select id="category">
+            <option value="9">General Knowledge</option>
+            <option value="10">Entertainmen Books</option>
+            <option value="12">Entertainmen Music</option>
+            <option value="11">Entertainmen Film</option>
+            <option value="21">Sports</option>
+          </select>
+        </div>
+        <div class="diff-wrapper">
+          <label for="difficulty">Difficulty</label><br />
+          <select id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+        </div>
+        <button id="start">
+            Start Quiz
+        </button>
+      </div>
+    </div>
+    <div id="loading-wrapper">
+        <img src="./loading.gif" alt="">
+    </div>
+
+    <script type="module" async src="./script.js"></script>
+  </body>
+</html>
